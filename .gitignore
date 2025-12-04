@@ -1,0 +1,48 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+
+# Build output from tsup and style-dictionary
+/dist
+/.tsup
+
+# Vite
+.vite/
+
+# Storybook
+/storybook-static
+/.vite-storybook
+
+# Testing
+/coverage
+/.vitest-browser/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local .env files
+.env
+.env.local
+.env.*.local
+
+# IDEs and editors
+/.vscode
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Local package tarballs
+*.tgz

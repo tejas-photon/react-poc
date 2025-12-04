@@ -1,0 +1,82 @@
+{
+  "name": "gskui",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",     
+      "require": "./dist/index.cjs"    
+    }
+  },
+
+  "scripts": {
+    "dev": "vite",
+    "dev:storybook": "start-storybook -p 6006 -s public",
+    "build:storybook": "build-storybook",
+    "build:tokens": "style-dictionary build --config style-dictionary.config.mjs",
+    "build:lib": "tsup",
+    "build": "npm run build:tokens && npm run build:lib",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "prepare": "npm run build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }, 
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+},
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.1.3",
+    "@storybook/addon-themes": "^10.0.1",
+    "@storybook/addon-a11y": "^10.1.1",
+    "@storybook/addon-docs": "^10.1.2",
+    "@storybook/addon-onboarding": "^10.1.1",
+    "@storybook/addon-vitest": "^10.1.1",
+    "@storybook/nextjs": "^10.0.1",
+    "@storybook/nextjs-vite": "^10.0.1",
+    "@storybook/react-vite": "^10.1.1",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/css-modules": "^1.0.5",
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-react": "^5.1.1",
+    "@vitest/browser-playwright": "^4.0.14",
+    "@vitest/coverage-v8": "^4.0.14",
+    "playwright": "^1.57.0",
+    "storybook": "^10.1.1",
+    "style-dictionary": "^5.1.1",
+    "tsup": "^8.5.1",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^4.0.14"
+  },
+  "dependencies": {
+    "@storybook/react": "^10.1.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "@untitledui/file-icons": "^0.0.9",
+    "@untitledui/icons": "^0.0.19",
+    "embla-carousel-react": "^8.6.0",
+    "input-otp": "^1.4.2",
+    "motion": "^12.23.12",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "qr-code-styling": "^1.9.2",
+    "tailwindcss": "^4.1.11",
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-react-aria-components": "^2.0.0",
+    "react-aria-components": "^1.13.0",
+    "react-hook-form": "^7.62.0",
+    "recharts": "^3.1.2",
+    "tailwind-merge": "^3.4.0",
+    "use-sync-external-store": "^1.6.0"
+  }
+}
