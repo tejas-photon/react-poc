@@ -3,11 +3,11 @@ import { defineConfig } from 'tsup';
 export default defineConfig({
  entry:['src/index.ts'],
  format:['cjs','esm'],
- dts:true,
+ dts: true,
  sourcemap:true,
  clean:true,
  external:['react','react-dom'],
- onSuccess: 'cp src/untitled-ui/tokens/generated/raw.css dist/',
+ onSuccess: 'cp -R src/untitled-ui dist/',
  target: 'es2017',
   esbuildOptions(options) {
     // @ts-ignore
@@ -15,6 +15,8 @@ export default defineConfig({
     // @ts-ignore
     options.jsxImportSource = 'react';
   },
-  tsconfig: './tsconfig.build.json'      
-
+  tsconfig: './tsconfig.build.json',
+  minify: false,
+  splitting: false,
+  treeshake: true, 
 });

@@ -1,13 +1,16 @@
 {
-  "name": "gskui",
+  "name": "@tejas-photon/react-component-library",
   "version": "0.1.0",
   "private": false,
   "type": "module",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "lib/styles.d.ts",
+    "README.md",
+    "LICENSE"
   ],
   "exports": {
     ".": {
@@ -78,5 +81,31 @@
     "recharts": "^3.1.2",
     "tailwind-merge": "^3.4.0",
     "use-sync-external-store": "^1.6.0"
+  },
+  "keywords": [
+    "react",
+    "component-library",
+    "design-system",
+    "design-tokens",
+    "typescript"
+  ],
+  "author": "Tejas Photon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tejas-photon/react-poc.git"
+  },
+    "publishConfig": {
+    "access": "public"
+  },
+    "sideEffects": [
+    "**/*.css"
+  ],
+    "overrides": {
+    "vite": "^6.4.1",
+    "vitest": {
+      "vite": "^6.4.1"
+    },
+    "description": "A reusable React component library with design tokens and TypeScript"
   }
 }

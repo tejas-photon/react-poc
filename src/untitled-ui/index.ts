@@ -1,3 +1,7 @@
+import "../untitled-ui/styles/globals.css";
+import "../../.storybook/colors.css";
+import "../untitled-ui/tokens/generated/css/raw.css";
+
 // Foundations
 export * from "./foundations/dot-icon";
 export * from "./foundations/play-button-icon";

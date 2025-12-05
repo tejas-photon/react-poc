@@ -1,0 +1,189 @@
+/**
+ * FIGMA TO UNTITLED UI TOKEN MAPPING
+ * 
+ * This file maps your Figma design tokens (from tokens.css) 
+ * to Untitled UI's expected token names (from theme.css).
+ * 
+ * Import this AFTER tokens.css and BEFORE theme.css in globals.css
+ */
+
+@theme {
+    /* ============================================
+       SPACING
+       Untitled UI uses --spacing as base unit (4px)
+       ============================================ */
+    --spacing: 4px;
+
+    /* ============================================
+       TEXT COLORS
+       Map Figma text tokens to Untitled UI names
+       ============================================ */
+    --color-text-primary: var(--colors-text-text-primary-900);
+    --color-text-primary_on-brand: var(--colors-text-text-primary-on-brand);
+    --color-text-secondary: var(--colors-text-text-secondary-700);
+    --color-text-secondary_hover: var(--colors-text-text-secondary-hover);
+    --color-text-secondary_on-brand: var(--colors-text-text-secondary-on-brand);
+    --color-text-tertiary: var(--colors-text-text-tertiary-600);
+    --color-text-tertiary_hover: var(--colors-text-text-tertiary-hover);
+    --color-text-tertiary_on-brand: var(--colors-text-text-tertiary-on-brand);
+    --color-text-quaternary: var(--colors-text-text-quaternary-500);
+    --color-text-quaternary_on-brand: var(--colors-text-text-quaternary-on-brand);
+    --color-text-white: var(--colors-text-text-white);
+    --color-text-disabled: var(--colors-text-text-disabled);
+    --color-text-placeholder: var(--colors-text-text-placeholder);
+    --color-text-placeholder_subtle: var(--colors-text-text-placeholder-subtle);
+
+    /* Brand text colors */
+    --color-text-brand-primary: var(--colors-text-text-brand-primary-900);
+    --color-text-brand-secondary: var(--colors-text-text-brand-secondary-700);
+    --color-text-brand-secondary_hover: var(--colors-text-text-brand-secondary-hover);
+    --color-text-brand-tertiary: var(--colors-text-text-brand-tertiary-600);
+    --color-text-brand-tertiary_alt: var(--colors-text-text-brand-tertiary-alt);
+
+    /* Error/Warning/Success text colors */
+    --color-text-error-primary: var(--colors-text-text-error-primary-600);
+    --color-text-error-primary_hover: var(--colors-text-text-error-primary-hover);
+    --color-text-warning-primary: var(--colors-text-text-warning-primary-600);
+    --color-text-success-primary: var(--colors-text-text-success-primary-600);
+
+    /* ============================================
+       BORDER COLORS
+       Map Figma border tokens to Untitled UI names
+       ============================================ */
+    --color-border-primary: var(--colors-border-border-primary);
+    --color-border-secondary: var(--colors-border-border-secondary);
+    --color-border-secondary_alt: var(--colors-border-border-secondary-alt);
+    --color-border-tertiary: var(--colors-border-border-tertiary);
+    --color-border-disabled: var(--colors-border-border-disabled);
+    --color-border-disabled_subtle: var(--colors-border-border-disabled-subtle);
+    --color-border-brand: var(--colors-border-border-brand);
+    --color-border-brand_alt: var(--colors-border-border-brand-alt);
+    --color-border-error: var(--colors-border-border-error);
+    --color-border-error_subtle: var(--colors-border-border-error-subtle);
+
+    /* ============================================
+       FOREGROUND (ICON) COLORS
+       Map Figma foreground tokens to Untitled UI names
+       ============================================ */
+    --color-fg-primary: var(--colors-foreground-fg-primary-900);
+    --color-fg-secondary: var(--colors-foreground-fg-secondary-700);
+    --color-fg-secondary_hover: var(--colors-foreground-fg-secondary-hover);
+    --color-fg-tertiary: var(--colors-foreground-fg-tertiary-600);
+    --color-fg-tertiary_hover: var(--colors-foreground-fg-tertiary-hover);
+    --color-fg-quaternary: var(--colors-foreground-fg-quaternary-400);
+    --color-fg-quaternary_hover: var(--colors-foreground-fg-quaternary-hover);
+    --color-fg-white: var(--colors-foreground-fg-white);
+    --color-fg-disabled: var(--colors-foreground-fg-disabled);
+    --color-fg-disabled_subtle: var(--colors-foreground-fg-disabled-subtle);
+
+    /* Brand foreground colors */
+    --color-fg-brand-primary: var(--colors-foreground-fg-brand-primary-600);
+    --color-fg-brand-primary_alt: var(--colors-foreground-fg-brand-primary-alt);
+    --color-fg-brand-secondary: var(--colors-foreground-fg-brand-secondary-500);
+    --color-fg-brand-secondary_alt: var(--colors-foreground-fg-brand-secondary-alt);
+    --color-fg-brand-secondary_hover: var(--colors-foreground-fg-brand-secondary-hover);
+
+    /* Error/Warning/Success foreground colors */
+    --color-fg-error-primary: var(--colors-foreground-fg-error-primary);
+    --color-fg-error-secondary: var(--colors-foreground-fg-error-secondary);
+    --color-fg-warning-primary: var(--colors-foreground-fg-warning-primary);
+    --color-fg-warning-secondary: var(--colors-foreground-fg-warning-secondary);
+    --color-fg-success-primary: var(--colors-foreground-fg-success-primary);
+    --color-fg-success-secondary: var(--colors-foreground-fg-success-secondary);
+
+    /* ============================================
+       BACKGROUND COLORS
+       Map Figma background tokens to Untitled UI names
+       ============================================ */
+    --color-bg-primary: var(--colors-background-bg-primary);
+    --color-bg-primary_alt: var(--colors-background-bg-primary-alt);
+    --color-bg-primary_hover: var(--colors-background-bg-primary-hover);
+    --color-bg-primary-solid: var(--colors-background-bg-primary-solid);
+    --color-bg-secondary: var(--colors-background-bg-secondary);
+    --color-bg-secondary_alt: var(--colors-background-bg-secondary-alt);
+    --color-bg-secondary_hover: var(--colors-background-bg-secondary-hover);
+    --color-bg-secondary_subtle: var(--colors-background-bg-secondary-subtle);
+    --color-bg-secondary-solid: var(--colors-background-bg-secondary-solid);
+    --color-bg-tertiary: var(--colors-background-bg-tertiary);
+    --color-bg-quaternary: var(--colors-background-bg-quaternary);
+
+    /* Brand background colors - Using foreground as fallback for missing bg tokens */
+    --color-bg-brand-primary: var(--colors-foreground-fg-brand-primary-600);
+    --color-bg-brand-secondary: var(--colors-foreground-fg-brand-secondary-500);
+    --color-bg-brand-solid: var(--colors-foreground-fg-brand-primary-600);
+    --color-bg-brand-solid_hover: var(--colors-foreground-fg-brand-secondary-hover);
+
+    /* Error/Warning/Success backgrounds - Using foreground colors as fallback */
+    --color-bg-error-primary: var(--colors-foreground-fg-error-primary);
+    --color-bg-error-secondary: var(--colors-foreground-fg-error-secondary);
+    --color-bg-warning-primary: var(--colors-foreground-fg-warning-primary);
+    --color-bg-success-primary: var(--colors-foreground-fg-success-primary);
+
+    /* ============================================
+       BRAND COLOR SCALE
+       Map to Untitled UI's numbered scale
+       ============================================ */
+    --color-brand-600: var(--colors-foreground-fg-brand-primary-600);
+    --color-brand-700: var(--colors-text-text-brand-secondary-700);
+    --color-brand-500: var(--colors-foreground-fg-brand-secondary-500);
+    --color-brand-900: var(--colors-text-text-brand-primary-900);
+
+    /* Create full brand scale using what we have */
+    --color-brand-50: #fef8f5;   /* Lightest - from on-brand colors */
+    --color-brand-100: #fef8f5;
+    --color-brand-200: #fef8f5;
+    --color-brand-300: var(--colors-text-text-brand-tertiary-600);
+    --color-brand-400: var(--colors-foreground-fg-brand-secondary-alt);
+    /* 500, 600, 700, 900 defined above */
+    --color-brand-800: var(--colors-text-text-brand-primary-900);
+
+    /* ============================================
+       ERROR COLOR SCALE
+       ============================================ */
+    --color-error-600: var(--colors-text-text-error-primary-600);
+    --color-error-primary: var(--colors-foreground-fg-error-primary);
+    --color-error-secondary: var(--colors-foreground-fg-error-secondary);
+
+    /* ============================================
+       GRAY SCALE (using neutral colors)
+       Untitled UI needs gray-{number} scale
+       ============================================ */
+    --color-gray-25: var(--colors-background-bg-primary);
+    --color-gray-50: var(--colors-background-bg-secondary);
+    --color-gray-100: var(--colors-background-bg-tertiary);
+    --color-gray-200: var(--colors-background-bg-quaternary);
+    --color-gray-300: var(--colors-border-border-tertiary);
+    --color-gray-400: var(--colors-foreground-fg-quaternary-400);
+    --color-gray-500: var(--colors-text-text-quaternary-500);
+    --color-gray-600: var(--colors-text-text-tertiary-600);
+    --color-gray-700: var(--colors-text-text-secondary-700);
+    --color-gray-800: var(--colors-background-bg-secondary-solid);
+    --color-gray-900: var(--colors-text-text-primary-900);
+    --color-gray-950: var(--colors-background-bg-primary-solid);
+
+    /* ============================================
+       BORDER RADIUS
+       Map Figma radius tokens (add px unit)
+       ============================================ */
+    --radius-none: 0px;
+    --radius-xs: 4px;    /* From --radius-xs: 4 */
+    --radius-sm: 6px;    /* From --radius-sm: 6 */
+    --radius-DEFAULT: 6px;
+    --radius-md: 8px;    /* From --radius-md: 8 */
+    --radius-lg: 10px;   /* From --radius-lg: 10 */
+    --radius-xl: 12px;   /* From --radius-xl: 12 */
+    --radius-2xl: 16px;  /* From --radius-2xl: 16 */
+    --radius-3xl: 20px;  /* From --radius-3xl: 20 */
+    --radius-full: 9999px;
+
+    /* ============================================
+       WIDTH TOKENS (if you have them)
+       ============================================ */
+    --max-width-container: var(--width-move-width-lg, 1280px);
+
+    /* ============================================
+       SPECIAL TOKENS
+       ============================================ */
+    --color-focus-ring: var(--colors-foreground-fg-brand-primary-600);
+    --color-focus-ring-error: var(--colors-text-text-error-primary-600);
+}
